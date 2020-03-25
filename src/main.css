@@ -10,38 +10,24 @@ body{
   background-color: #f3f3f3;
 }
 
-.flexbox {
-  display :flex;
-  justify-content: space-between;
-
-  width :100%;
-  max-width : 768px;
-  height: 85vh;
-
-  overflow :hidden;
-
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.flexbox .board {
-  display: flex;
-  flex-direction: column;
+.board {
 
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+  height: 85vh;
 
   background-color: #313131;
 
   padding: 15px;
 }
 
-.flexbox .board .card {
+.card {
   padding: 15px 25px;
   background-color: #f3f3f3;
+  /* display: block; */
 
+  margin-top: 15px;
   cursor: pointer;
-  margin-bottom: 15px;
 }
 
 .trelloHeader{
@@ -50,10 +36,38 @@ body{
   background-color: burlywood;
 }
 
+
 .addBtn {
-  height: 40px;
   color: #5e6c84;
+  width: 171px;
   background-color: lavenderblush;
-  font-size: 20px;
   font-style:italic ;
 }
+
+.title{
+  color: wheat;
+  text-align: center;
+  background-color: transparent;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.centerThing{
+  text-align: center;
+}
+
+.colMargin{
+  margin: 20px;
+  flex-grow: 0;
+}
+
+/* button, input {
+  overflow: visible;
+  width: 100%;
+} */

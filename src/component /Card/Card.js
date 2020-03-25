@@ -1,8 +1,10 @@
 import React from 'react'
 
 function Card(props) {
+    // console.log("cards", props)
 
     const dragStart = e => {
+        // console.log("dragStart", e.target)
         const target = e.target;
 
         e.dataTransfer.setData('card_id', target.id);
